@@ -35,3 +35,26 @@ console.log(0 === ""); //*false
 console.log(undefined === null); //*false
 console.log(false === 0); //*false
 console.log(true === 1); //*false
+
+//* The != Non-equality Operator => it reverse Checks if two values equal?
+console.log(1 != 1); //*false
+console.log(1 != "1"); //*false
+console.log("z" != "z"); //*false
+console.log("z" != "x"); //*true
+console.log(true != true); //*false
+console.log(false != true); //*true
+console.log(0 != ""); //*false
+console.log(undefined != null); //*false
+console.log(false != 0); //*false
+console.log(true != 1); //*false
+
+//* The !== strict Non-equality operator => it reverse Checks if two values equal
+console.log(1 !== 1); //*false
+console.log(1 !== "1"); //*true
+console.log("z" !== "z"); //*false
+console.log(true !== true); //*false
+console.log(false !== true); //*true
+console.log(0 !== ""); //*true
+console.log(undefined !== null); //*true
+console.log(false !== 0); //*true
+console.log(true !== 1); //*true

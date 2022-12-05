@@ -1,3 +1,4 @@
+// ! Switch Statement use for conditions that are known the value of condition unlike ifelse that use for conditions unpredictable/unknown
 // switch statement => checking for a single condition
 // let score = 10;
 // switch (score) {
@@ -32,4 +33,21 @@ switch (score) {
     break;
   default:
     console.log("Grade F");
+}
+
+//this one for something unpredictable
+let value = "b";
+
+switch (value) {
+  case 1 | "a":
+    console.log("Value A");
+    break;
+  case 2 | "b":
+    console.log("Value B");
+    break;
+  // case 3:
+  //   console.log("Value C");
+  //   break;
+  default:
+    console.log("Value E");
 }
