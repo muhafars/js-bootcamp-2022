@@ -1,45 +1,44 @@
-/** 
-*! Variable Type and Declarations
-*! 1- var
-** Var is variable global scope that means can be access even inside function and outside function 
-* @reassignments = true => can be change value
-*! 2- let
-** Let is block scope that means cannot be accessed outside block declaration => if declare in some function will not be able to access outside block function
-* @reassignments = true => can be change value
-*! 3- const
-** const is block scope that means cannot be accessed outside block declaration
-* @reassignments = false => cannot be change value
+// if Statement => checking for a single condition
 
-*! Naming variable must be {understandable, make sense, camelCase, use rules}
-* @rules @examples
-** let foo = ....;, fooUpdate = ....;, fooDelete=....;
-*/
+// Example 1
+// if ("Tom" === "Tom") {
+//   console.log("Yay Tom");
+// }
 
-// var
-var name = "Muhammad";
-console.log(name); //Muhammad
-name = "Muhammad Fajri";
-console.log(name); //Muhammad Fajri
+// Example 2
+// if ("Jack" === "Tom") {
+//   console.log("NO Way");
+// }
 
-// let
-function person() {
-  let age = 25;
-  console.log(age); //25
+// Exmaple 3
+// let time = 0700;
+// if (time === 0700) {
+//   console.log("Good Morning");
+// }
+
+// else statement => checking for two conditions
+// let score = 10;
+// if (score === 10) {
+//   console.log("Grade A");
+// } else {
+//   console.log("Grade B");
+// }
+
+// if else statement => checking for more than two conditions
+// let score = 10;
+// let score = 9;
+// let score = 8;
+// let score = 7;
+let score = 6;
+
+if (score === 10) {
+  console.log("Grade A");
+} else if (score === 9) {
+  console.log("Grade B");
+} else if (score === 8) {
+  console.log("Grade C");
+} else if (score === 7) {
+  console.log("Grade D");
+} else {
+  console.log("Grade F");
 }
-person(); //call person FN with age variable output: 25
-//  if we call the variable age in block personFN
-/**
- * ! console.log(age);
- * * output: Uncaught ReferenceError: age is not defined
- */
-// need to redeclare variable
-let age = 20;
-console.log(age); //20
-// that is what a meaning of block scope variable
-
-// const
-const skills = "Algorithms";
-console.log(skills); //Algorithms
-skills = 2;
-// if we try to change the value of a variable will end up with an error
-console.log(skills); //Uncaught TypeError: Assignment to constant variable.
